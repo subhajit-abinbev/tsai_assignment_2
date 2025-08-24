@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 60px;
+}
+.box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 32px;
+    width: 350px;
+    min-height: 350px;
+}
+.box h2 {
+    margin-top: 0;
+    color: #333;
+}
+#animal-img {
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.file-info {
+    margin-top: 20px;
+    background: #e9f7ef;
+    padding: 12px;
+    border-radius: 6px;
+    color: #2e7d32;
+    font-size: 16px;
+}
