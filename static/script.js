@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => response.json())
         .then(data => {
-            fileInfo.innerHTML = `<strong>Name:</strong> ${data.name}<br><strong>Size:</strong> ${data.size} bytes<br><strong>Type:</strong> ${data.type}`;
+            fileInfo.innerHTML = `<strong>Name:</strong> ${data.name}<br><strong>Size:</strong> ${data.size}<br><strong>Type:</strong> ${data.type}`;
         })
         .catch(() => {
             fileInfo.textContent = 'Error uploading file.';
