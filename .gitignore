@@ -9,5 +9,4 @@ env/
 .DS_Store
 .idea/
 .vscode/
-static/*.jpg
 uploads/

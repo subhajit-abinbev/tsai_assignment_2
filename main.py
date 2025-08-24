@@ -16,8 +16,10 @@ def read_root(request: Request):
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
     contents = await file.read()
+    size_bytes = len(contents)
+    size_mb = round(size_bytes / (1024 * 1024), 2)
     return JSONResponse({
         "name": file.filename,
-        "size": len(contents),
+        "size": f"{size_mb} MB",
         "type": file.content_type
     })
